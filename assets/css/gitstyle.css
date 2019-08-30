@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+:root {
+  --nav-borders: rgb(182, 182, 182);
+  --asu-maroon: rgb(140,29,64);
+  --asu-gold:rgb(255,198,39)
+}
+
+/*REGULAR CSS*/
+
+html {
+  font-family: 'Roboto', sans-serif;
+  font-size: 17.5px;
+}
+
+header, main, footer {
+  padding-left: 300px;
+}
+
+main{
+  margin: 4% 5% 5% 7%;
+}
+
+@media only screen and (max-width : 992px) {
+  header, main, footer {
+    padding-left: 0;
+    margin: 0;
+  }
+    .small-center {
+      text-align: center;
+  }
+}
+
+.asu-maroon{
+  color: var(--asu-maroon)
+}
+
+.asu-gold{
+  color: var(--asu-gold)
+}
+
+h1{
+  font-weight: 300;
+}
+
+.row .image-gallery{
+  margin: 0;
+  padding: 0;
+}
+
+.grid:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+.grid-sizer,
+.grid-item {
+    width: 32.333%;
+    margin-bottom: 5px;
+}
+.grid-item {
+    float: left;
+}
+.grid-item img {
+    display: block;
+    max-width: 100%;
+}
+
+
+/*https://codesandbox.io/s/github/nuxt/nuxt.js/tree/dev/examples/routes-transitions?from-embed*/
+.container {
+transition: all .5s cubic-bezier(.55,0,.1,1);
+}
+
+.page-enter-active {
+  transition: all .2s ease;
+}
+.page-leave-active {
+  transition: all .4s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+}
+.page-enter, .slide-fade-leave-to
+/* .slide-fade-leave-active for <2.1.8 */ {
+  transform: translateX(10px);
+  opacity: 0;
+}
+  
+  .fade-enter-active, .page-leave-active {
+    transition: opacity .5s
+  }
+  .fade-enter, .page-leave-active {
+    opacity: 0
+  }
+  .bounce-enter-active {
+    animation: bounce-in .5s;
+  }
+  .bounce-leave-active {
+    animation: bounce-in .5s reverse;
+  }
+  @keyframes bounce-in {
+    0% {
+      transform: scale(0);
+    }
+    50% {
+      transform: scale(1.5);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  .slide-left-enter,
+  .slide-right-leave-active {
+    opacity: 0;
+    transform: translate(30px, 0);
+  }
+  .slide-left-leave-active,
+  .slide-right-enter {
+    opacity: 0;
+    transform: translate(-30px, 0);
+  }
+
+  .slide-fade-enter-active {
+    transition: all .2s ease;
+  }
+  .slide-fade-leave-active {
+    transition: all .4s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+  }
+  .slide-fade-enter, .slide-fade-leave-to
+  /* .slide-fade-leave-active for <2.1.8 */ {
+    transform: translateX(10px);
+    opacity: 0;
+  }
