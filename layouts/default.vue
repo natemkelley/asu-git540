@@ -50,7 +50,7 @@ export default {
     this.$router.options.routes.forEach(function(element) {
         if(element.name != 'index') arr.push(element)
     });
-    sortJsonArray(arr, 'name','asc').unshift({name:'Home', path:'/'})
+    sortJsonArray(arr, 'name','asc') //.unshift({name:'Home', path:'/'})
     this.routes = arr;
   },
   components: {

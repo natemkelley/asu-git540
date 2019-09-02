@@ -37,13 +37,8 @@ export default {
           routes: [],
       }
   },
-  mounted(){
-    var arr = []
-      this.$router.options.routes.forEach(function(element) {
-          if(element.name != 'index') arr.push(element)
-      });
-      sortJsonArray(arr, 'name','asc')
-      this.routes = arr;
+  created(){
+    window.location.replace(this.$router.options.routes[0].path);
   },
   updated(){
     this.updateGrid();
@@ -89,3 +84,12 @@ export default {
   transform: scaleX(-1);
 }
 </style>
+
+/*
+    var arr = []
+    this.$router.options.routes.forEach(function(element) {
+        if(element.name != 'index') arr.push(element)
+    });
+    sortJsonArray(arr, 'name','asc')
+    this.routes = arr;
+ */

@@ -1,11 +1,8 @@
 <template>
     <div class="image">
         <div v-show="isLoad">
-            <img v-lazy="src" class="responsive-img materialboxed" @load="loaded" :data-caption="caption"/>
-            <div class="superimpose">
-                {{caption}}
-                <!--<p>{{date | moment("LLL")}}</p>-->
-            </div>
+            <iframe :src="src" width="100%" :height="setheight">
+            </iframe>
         </div>
         <div v-show="!isLoad" class="loading">
             <circle-loader></circle-loader>
@@ -20,9 +17,10 @@ var request = require('request');
 export default {
   data: function () {
       return {
-          date: new Date(),
           src: null,
           isLoad: false,
+          defaultHeight: '500px',
+          setheight: '500px'
       }
   },
   methods:{
@@ -30,16 +28,28 @@ export default {
         setTimeout(()=>{
             this.isLoad = true;
             this.$emit('dunzo', true);
-            M.Materialbox.init(this.$el.querySelectorAll('.materialboxed'));
         }, 150)
+      },
+      checkIframeLoaded(){
+        var iframe = this.$el.getElementsByTagName('iframe')[0];
+        var iframeDoc = iframe.contentDocument || iframe.contentWindow.document;        
+        if(iframeDoc.readyState  == 'complete'){
+            this.loaded();
+            return
+        }
+        setTimeout(()=>{
+            this.checkIframeLoaded()
+        }, 1250)
       }
   },
   mounted(){
-    this.src = require('@/assets/img/'+this.imageURL)
+    this.src = '/'+this.pdfURL;
+    this.setheight = this.height || this.defaultHeight
+    this.checkIframeLoaded();
   },
   props: {
-    imageURL: String,
-    caption: String
+    pdfURL: String,
+    height: String
   },
   components: {
     CircleLoader,
@@ -48,21 +58,5 @@ export default {
 </script>
 
 <style scoped>
-
-.superimpose {
-    position: relative;
-    margin-top: -55px;
-    float: right;
-    margin-right: 4%;
-    color: white;
-}
-
-.image-gallery .image{
-    margin: 11px;
-    background: gray;
-}
  
- img{
-    background: gray;
- }
 </style>
