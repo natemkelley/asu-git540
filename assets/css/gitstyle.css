@@ -67,6 +67,9 @@ h1{
     max-width: 100%;
 }
 
+.active-link{
+  background: rgb(140,29,64,0.09);
+}
 
 /*https://codesandbox.io/s/github/nuxt/nuxt.js/tree/dev/examples/routes-transitions?from-embed*/
 .container {

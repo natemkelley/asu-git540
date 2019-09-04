@@ -51,10 +51,13 @@ export default {
 
 .superimpose {
     position: relative;
-    margin-top: -55px;
+    margin-top: -35px;
     float: right;
-    margin-right: 4%;
+    /* margin-right: 4%; */
     color: white;
+    width: 100%;
+    text-align: center;
+    font-size: 0.77em;
 }
 
 .image-gallery .image{
