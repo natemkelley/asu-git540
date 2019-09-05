@@ -10,6 +10,9 @@
         <div class="col s6">
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2948.1057493735793!2d-111.68337608523012!3d33.30497956418537!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872bad9da91c6cfb%3A0x2cea71a339eed28a!2sWater%20Tower%2C%20Mesa%2C%20AZ%2085212!5e1!3m2!1sen!2sus!4v1567013677626!5m2!1sen!2sus" width="100%" height="390" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
         </div>
+        <div class="col s12">
+          <iframe src="https://www.google.com/maps/embed?pb=!4v1567641373215!6m8!1m7!1sAvh7pPlv0axaLoRBuwdGbg!2m2!1d33.30478192353348!2d-111.6807584889742!3f296.76468564767305!4f17.83361705504882!5f1.0063043547592547" width="100%" height="420" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+        </div>
       </div>
       <div class="divider"></div>
       <div class="section row">
@@ -38,10 +41,19 @@
 
       <div class="section row">
         <h2>Historical Findings</h2>
-        <h4>Google Earth Satellite Images</h4>
         <p>
           After visiting the physical location, I decided to look at aerial photographs and 3D models in Google Earth. As you will see from the photos below, the tower sits on a compound that is roughly 7800 square yards. The tower originally had utility buildings sitting on its compound. However, those buildings were removed between 2013 and 2015. My guess is these buildings helped move water into the tower. Now that those buildings are gone, I believe the tower is no longer used to store water.
         </p>
+        <h5>Google Earth Model Images</h5>
+        <div class="grid">
+          <div class="grid-sizer"></div>
+          <div v-for="img in modelImg">
+              <div class="grid-item">
+                <image-meta :caption="img.capt" :imageURL="img.name" v-on:dunzo="dunzo($event)" ></image-meta>
+              </div>
+          </div>
+        </div>
+        <h5>Google Earth Historical Images</h5>
         <div class="grid">
           <div class="grid-sizer"></div>
           <div v-for="img in earthImg">
@@ -89,6 +101,7 @@
             <li class="collection-item">The tower is no longer in use</li>
             <li class="collection-item">It has seen multiple paint jobs over the years, initially being steel, checkered, white, and finally matte silver.</li>
             <li class="collection-item">The primary function of the tower now is to hold wireless radio panels with a secondary purpose of showing ASU&rsquo;s brand on the side</li>
+            <li class="collection-item">Public information regarding ASU's water tower published by ASU is found at <a href="https://tours.asu.edu/polytechnic/points-of-pride/water-tower" target="_blank">https://tours.asu.edu/polytechnic/points-of-pride/water-tower</a></li>
             </ul>
         </div>
       </div>
@@ -119,7 +132,8 @@ export default {
           msry: null,
           msry2: null,
           msry3: null,
-          earthImg:[{name:'wt3.jpg',capt:'Google Earth Model'},{name:'wt4.jpg',capt:'Google Earth Model - 2'},{name:'wt5.jpg',capt:'Google Earth Model - 3'},{name:'wt7.jpg',capt:'Google Earth - 1997'},{name:'wt10.jpg',capt:'Google Earth - 2010'},{name:'wt11.jpg',capt:'Google Earth - 2013'},{name:'wt6-2.jpg',capt:'Google Earth - 2015'}],
+          modelImg:[{name:'wt3.jpg',capt:'Google Earth Model'},{name:'wt4.jpg',capt:'Google Earth Model - 2'},{name:'wt5.jpg',capt:'Google Earth Model - 3'}],
+          earthImg:[{name:'wt7.jpg',capt:'Google Earth - 1997'},{name:'wt10.jpg',capt:'Google Earth - 2010'},{name:'wt11.jpg',capt:'Google Earth - 2013'},{name:'wt6-2.jpg',capt:'Google Earth - 2015'},{name:'2018.png',capt:'Google Earth - 2018'}],
           historicalImages: [],
           facServiceVid:'https://lh3.googleusercontent.com/_1ZEDWhK_9DGr7VrWLV3gMwi_gp87_VRWdw45gu0Z3CIDFRWuajuaGf4cngZHFu_cgwlTBzNxjSLZQ_f8BBgJ6SKYZw9IKKJ1FbNZPf3M9SqVjmKGfrdyD7omZD6XMkyHkggJ6lNLDo=m37'
       }
@@ -139,18 +153,18 @@ export default {
         };
         var grid = this.$el.querySelector('.grid');
         var grid2 = this.$el.querySelectorAll('.grid')[1];
-        //var grid3 = this.$el.querySelectorAll('.grid')[2];
+        var grid3 = this.$el.querySelectorAll('.grid')[2];
         this.msry = new Masonry(grid, options);
         this.msry2 = new Masonry(grid2, options);
-        //this.msry3 = new Masonry(grid3, options);
+        this.msry3 = new Masonry(grid3, options);
         this.msry.layout();
         this.msry2.layout();
-        //this.msry3.layout();
+        this.msry3.layout();
     },
     dunzo: function(data){
       this.msry.layout();
       this.msry2.layout();
-      //this.msry3.layout();
+      this.msry3.layout();
     }
   }
 }
