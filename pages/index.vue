@@ -37,7 +37,7 @@ export default {
           routes: [],
       }
   },
-  created(){
+  beforeCreate(){
     window.location.replace(this.$router.options.routes[0].path);
   },
   updated(){

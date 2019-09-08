@@ -1,7 +1,12 @@
 <template>
     <div class="image">
         <div v-show="isLoad">
-            <img v-lazy="src" class="responsive-img materialboxed" @load="loaded" :data-caption="caption"/>
+        <iframe 
+          frameborder="0" 
+          width="100%"     
+          height="210"
+          :src="src">    
+        </iframe>
             <div class="superimpose">
                 {{caption}}
                 <!--<p>{{date | moment("LLL")}}</p>-->
@@ -19,7 +24,6 @@ import CircleLoader from '@/components/circleLoader'
 export default {
   data: function () {
       return {
-          date: new Date(),
           src: null,
           isLoad: false,
       }
@@ -29,19 +33,16 @@ export default {
         setTimeout(()=>{
             this.isLoad = true;
             this.$emit('dunzo', true);
-            M.Materialbox.init(this.$el.querySelectorAll('.materialboxed'));
-        }, 150)
+        }, 550)
       }
   },
   mounted(){
-      if(!this.imageURL.includes('http')){
-        this.src = require('@/assets/img/'+this.imageURL)
-      } else{
-          this.src=this.imageURL
-      }
+    //this.src = require('@/assets/img/'+this.audioURL)
+    this.loaded();
+    this.src = this.audioURL || "https://drive.google.com/file/d/10IDL913xoGBJdEHLKqrlefzdSUp1K9UU/preview"
   },
   props: {
-    imageURL: String,
+    audioURL: String,
     caption: String
   },
   components: {
@@ -51,24 +52,15 @@ export default {
 </script>
 
 <style scoped>
-
-.superimpose {
+.superimpose{
     position: relative;
-    margin-top: -35px;
+    margin-top: -65px;
     float: right;
     /* margin-right: 4%; */
-    color: white;
+    color: black;
     width: 100%;
     text-align: center;
     font-size: 0.77em;
 }
 
-.image-gallery .image{
-    margin: 11px;
-    background: gray;
-}
- 
- img{
-    background: gray;
- }
 </style>

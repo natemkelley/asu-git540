@@ -28,11 +28,12 @@ export default {
         setTimeout(()=>{
             this.isLoad = true;
             this.$emit('dunzo', true);
-        }, 150)
+        }, 550)
       },
       checkIframeLoaded(){
         var iframe = this.$el.getElementsByTagName('iframe')[0];
-        var iframeDoc = iframe.contentDocument || iframe.contentWindow.document;        
+        var iframeDoc = iframe.contentDocument || iframe.contentWindow.document; 
+        console.log(iframeDoc.readyState)       
         if(iframeDoc.readyState  == 'complete'){
             this.loaded();
             return

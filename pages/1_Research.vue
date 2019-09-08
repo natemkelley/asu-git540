@@ -33,9 +33,11 @@
                 <image-meta :imageURL="'camerawt'+n+'.jpg'" :caption="'August 26th observation - '+n" v-on:dunzo="dunzo($event)" ></image-meta>
               </div>
           </div>
+          <image-meta class="grid-item" caption="Pinterest Image of Water Tower" imageURL="https://i.pinimg.com/originals/e1/30/7a/e1307a3b88036528755c2ccf5cb3270b.jpg"></image-meta>
           <div v-for="vid in vids">
               <responsive-video class="grid-item" :videoURL='vid'></responsive-video>
           </div>
+          <audio-iframe class="grid-item" audioURL="https://drive.google.com/file/d/10IDL913xoGBJdEHLKqrlefzdSUp1K9UU/preview" caption="September 6th Audio Recording"></audio-iframe>
         </div>
       </div>
 
@@ -113,6 +115,7 @@ import ImageMeta from '~/components/ImageWithMeta'
 import ResponsiveVideo from '~/components/ResponsiveVideo'
 import PdfIframe from '~/components/pdfIframe';
 import Masonry from 'masonry-layout';
+import AudioIframe from '~/components/AudioWithMeta';
 
 //iframe
 
@@ -120,7 +123,8 @@ export default {
   components: {
     ImageMeta,
     ResponsiveVideo,
-    PdfIframe
+    PdfIframe,
+    AudioIframe
   },
   data: function () {
       return {

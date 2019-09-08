@@ -31,7 +31,7 @@ import sortJsonArray from 'sort-json-array'
 export default {
   data: function () {
       return {
-          name: 'swagger',
+          name: 'Loading...',
           Logo: Logo
       }
   },
