@@ -96,6 +96,20 @@
             </div>
         </div>
         <div class="section row">
+          <div class="col m12">
+            <h4>Interviews with SAM Services Workers</h4>
+            <div class="row">
+              <div class="col s6">
+                <image-meta imageURL='int1.jpg' caption='Utility service trucks - Sept 6'></image-meta>
+              </div>
+              <div class="col s6">
+                <image-meta imageURL='int2.jpg' caption='Utility service workers - Sept 6'></image-meta>
+              </div>
+            </div>
+            <p>While observing the tower on September 6th, I noticed that four utility trucks were working on the grounds of the tower. They were painting out lines underneath the tower directly below the cell phone panels. I walked over to them (inside the gates of the tower) and asked for an interview. They agreed but said they did not want their voices recorded. They informed me that they work for the utility company and were doing surveys and tests of the internet lines underneath the panels. Although he could not confirm what he was doing by contract, he hinted they would be upgrading the lines in anticipation of a 5G launch in the next year or two. The interview lasted about 5 minutes and he politely asked me to leave the grounds. </p>
+          </div>
+        </div>
+        <div class="section row">
           <h4>Summary of Findings</h4>
           <ul>
             <li class="collection-item">The tower was constructed in 1941 to service the Williams Field Airforce Base</li>

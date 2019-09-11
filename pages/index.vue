@@ -1,9 +1,8 @@
 <template>
   <div>
-    <!--<img src="https://media0.giphy.com/media/JPUdQxNx6UmvvKP7JZ/source.gif" class="arrow"/>-->
-    <h2>This page is under construction...  <i class="small material-icons">build</i></h2>
+    <h2>Loading...</h2>
 
-    <div class="row grid">
+    <!--<div class="row grid">
       <div v-for="n in routes">
         <div class="grid-item">
           <div class="waves-effect waves-yellow card">
@@ -18,7 +17,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </div>-->
   </div>
 </template>
 

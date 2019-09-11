@@ -33,8 +33,8 @@ export default {
       checkIframeLoaded(){
         var iframe = this.$el.getElementsByTagName('iframe')[0];
         var iframeDoc = iframe.contentDocument || iframe.contentWindow.document; 
-        console.log(iframeDoc.readyState)       
-        if(iframeDoc.readyState  == 'complete'){
+        console.log(iframeDoc.readyState)     
+        if((iframeDoc.readyState  == 'complete') || (navigator.userAgent.indexOf("Firefox") > 0)){
             this.loaded();
             return
         }
