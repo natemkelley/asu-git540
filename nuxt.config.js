@@ -45,7 +45,7 @@ export default {
     '@bazzite/nuxt-optimized-images',
   ],
   optimizedImages: {
-    optimizeImages: true
+    optimizeImages: false
   },
   router: {
     linkActiveClass: 'active-link'
