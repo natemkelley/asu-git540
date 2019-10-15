@@ -31,7 +31,7 @@ import sortJsonArray from 'sort-json-array'
 export default {
   data: function () {
       return {
-          name: 'Loading...',
+          name: '1 - Research',
           Logo: Logo
       }
   },
@@ -42,7 +42,11 @@ export default {
   },
   mounted(){
     M.Sidenav.init(document.querySelector('.sidenav'));
+    if (this.$router.history.current.name == 'index') {
+
+    } else{
     this.name = this.$router.history.current.name
+    }
     document.getElementsByClassName("hidden")[0].classList.remove("hidden");
   },
   created() {

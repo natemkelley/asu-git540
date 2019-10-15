@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h2>Loading...</h2>
+    <h3>Loading...</h3>
 
     <!--<div class="row grid">
       <div v-for="n in routes">
@@ -22,63 +22,68 @@
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue'
-import Masonry from 'masonry-layout'
-import sortJsonArray from 'sort-json-array'
+import Logo from "~/components/Logo.vue";
+import Masonry from "masonry-layout";
+import sortJsonArray from "sort-json-array";
 
 export default {
-  name:'Home',
+  name: "Home",
   components: {
     Logo
   },
-  data: function () {
-      return {
-          routes: [],
-      }
+  data: function() {
+    return {
+      routes: []
+    };
   },
-  beforeCreate(){
-    window.location.replace(this.$router.options.routes[0].path);
+  beforeCreate() {
+    this.$router.push({
+      path: this.$router.options.routes[0].path
+    });
+    //window.location.replace(this.$router.options.routes[0].path);
   },
-  updated(){
+  updated() {
     this.updateGrid();
   },
-  methods:{
-    updateGrid: function(){
-      var grid = this.$el.querySelector('.grid');
-      var msnry = new Masonry( grid, {
-        itemSelector: '.grid-item',
-        columnWidth: '.grid-item',
+  methods: {
+    updateGrid: function() {
+      var grid = this.$el.querySelector(".grid");
+      var msnry = new Masonry(grid, {
+        itemSelector: ".grid-item",
+        columnWidth: ".grid-item",
         percentPosition: true,
         horizontalOrder: true,
-        transitionDuration: '0.8s',
+        transitionDuration: "0.8s",
         stagger: 30
       });
-      console.log('updated')
+      console.log("updated");
     }
   },
-  filters:{
-    camelCased: function (name) {
+  filters: {
+    camelCased: function(name) {
       return name
-        .replace(/([A-Z])/g, ' $1')
-        .replace(/^./, function(str){ return str.toUpperCase(); })
-        .replace(/_/g, ' - ')
+        .replace(/([A-Z])/g, " $1")
+        .replace(/^./, function(str) {
+          return str.toUpperCase();
+        })
+        .replace(/_/g, " - ");
     }
   }
-}
+};
 </script>
 
 <style scoped>
 .grid-sizer,
-.grid-item { 
+.grid-item {
   width: 49%;
   padding: 10px;
 }
 
 .waves-effect {
-    display: inherit; 
+  display: inherit;
 }
 
-.arrow{
+.arrow {
   -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
 }
