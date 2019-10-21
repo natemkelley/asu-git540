@@ -41,12 +41,7 @@ export default {
   /*
   ** Nuxt.js modules
   */
-  modules: [
-    '@bazzite/nuxt-optimized-images',
-  ],
-  optimizedImages: {
-    optimizeImages: false
-  },
+  modules: [],
   router: {
     linkActiveClass: 'active-link'
   },
