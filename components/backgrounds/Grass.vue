@@ -50,9 +50,12 @@
       <div>
         <Train :introTrain="introTrain" class="trainCont" />
       </div>
+      <div>
+        <PowerPlant class="powerCont" />
+      </div>
     </div>
     <div class="ground-container" ref="speechCont">
-                  <div
+      <div
         class="item speech-bubble"
         ref="speechBubble"
         :style="{ marginLeft: offsetLeft + 95 + 'px' }"
@@ -77,6 +80,8 @@ import Grass_Objects from "~/components/backgrounds/grass_objects2.js";
 import Grass_Nature from "~/components/backgrounds/grass_nature.js";
 import Grass_Sky from "~/components/backgrounds/grass_sky.js";
 import Train from "~/components/Train.vue";
+import PowerPlant from "~/components/Powerplant.vue";
+
 export default {
   name: "Grass",
   props: [
@@ -88,7 +93,7 @@ export default {
     "skySpeed",
     "offsetLeft"
   ],
-  components: { Ground, Train },
+  components: { Ground, Train, PowerPlant },
   mounted() {
     this.initLayers();
   },
@@ -110,23 +115,40 @@ export default {
       let totalWidth = this.$refs.ground
         .getAttribute("viewBox")
         .split(/\s+|,/)[2];
-      this.$emit("informheight", { width: totalWidth-350, container: "grass" });
+      this.$emit("informheight", {
+        width: totalWidth - 350,
+        container: "grass"
+      });
     },
     handleTextTyping(pixels) {
       var textArray = [
-        "Hello Friends! Welcome to my portfolio.",
-        "Feel free to use the menu button to jog between sections",
-        "You can drill more into a piece of content by clicking on it!"
+        "Zdravo! My name is Nikky Tesla. Pleasure to meet you!",
+        "Say goodbye to steam powered engines and direct current.",
+        "My new Westinghouse power plant uses alternating current.",
+        "How cool is that?",
+        "Is goes further and is more efficient.",
+        "Suck it Edison."
       ];
       var typingNum = 0;
-      if (Math.abs(pixels) < 3794) {
+      console.log(pixels);
+      if (Math.abs(pixels) < 700) {
         typingNum = 0;
       }
-      if (Math.abs(pixels) < 4474 && Math.abs(pixels) > 3793) {
+      if (Math.abs(pixels) > 700 && Math.abs(pixels) < 1500) {
         typingNum = 1;
       }
-      if (Math.abs(pixels) < 5555 && Math.abs(pixels) > 4473) {
+      if (Math.abs(pixels) > 1501 && Math.abs(pixels) < 2150) {
         typingNum = 2;
+      }
+      if (Math.abs(pixels) > 2151 && Math.abs(pixels) < 2850) {
+        typingNum = 3;
+      }
+            if (Math.abs(pixels) > 2851 && Math.abs(pixels) < 3250) {
+        typingNum = 4;
+      }
+            
+        if (Math.abs(pixels) > 3251 && Math.abs(pixels) < 15150) {
+        typingNum = 5;
       }
 
       var options = {
@@ -144,7 +166,7 @@ export default {
       }
     },
     handleSpeechBubble(pixels) {
-      if (Math.abs(pixels) > 10 && Math.abs(pixels) < 5400) {
+      if (Math.abs(pixels) > 10 && Math.abs(pixels) < 3400) {
         this.$refs.speechBubble.classList.add("show");
         if (!this.typeRunning) {
           this.handleTextTyping(pixels);
@@ -157,10 +179,10 @@ export default {
   watch: {
     groundSpeed(pixels) {
       this.$refs.groundContainer.style.marginLeft = `${pixels + "px"}`;
-            this.$refs.speechCont.style.marginLeft = `${pixels + "px"}`;
+      this.$refs.speechCont.style.marginLeft = `${pixels + "px"}`;
 
       this.handleSpeechBubble(pixels);
-      if (Math.abs(pixels) > 100) {
+      if (Math.abs(pixels) > 300) {
         this.introTrain = true;
       }
       this.$refs.interactive.style.transform = "translateX(" + pixels + "px)";
@@ -180,7 +202,7 @@ export default {
 
 <style scoped>
 .trainCont {
-  margin-left: -100px;
+  margin-left: -40px;
   margin-bottom: 100px;
 }
 
@@ -209,9 +231,9 @@ export default {
 }
 
 .speech-bubble .text {
-  font-family: "Georgia",Georgia, serif;
+  font-family: "Georgia", Georgia, serif;
   position: absolute;
-      font-weight: bolder;
+  font-weight: bolder;
   bottom: 0;
   margin-left: 55px;
   height: 300px;
@@ -222,5 +244,14 @@ export default {
 
 .speech-bubble span {
   display: none;
+}
+
+.powerCont {
+  z-index: -1;
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 320px;
+  margin-left: 730px;
+  transform: scale(0.78)
 }
 </style>

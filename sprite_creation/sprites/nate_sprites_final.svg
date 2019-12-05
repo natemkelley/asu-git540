@@ -17,8 +17,8 @@
       <circle cx="31.5" cy="38" r="9.5" style="fill: #f9d0a7"></circle>
     </g>
     <g>
-      <polygon points="87.01 74 82.5 84 77.5 84 71.5 74 87.01 74" style="fill: #006837"></polygon>
-      <path d="M82.5,84l3,41-5.59,7.34a.53.53,0,0,1-.88,0L74.5,125l3-41Z" style="fill: #009245"></path>
+      <polygon points="87.01 74 82.5 84 77.5 84 71.5 74 87.01 74" style="fill: #DAC000"></polygon>
+      <path d="M82.5,84l3,41-5.59,7.34a.53.53,0,0,1-.88,0L74.5,125l3-41Z" style="fill: #DAA520"></path>
       <path d="M87.5,74l-4.42,8.07a.8.8,0,0,0,1.17.91L100,74Z" style="fill: #e6e6e6"></path>
       <path d="M76.93,82,72,74H62.5l14,8.42A.32.32,0,0,0,76.93,82Z" style="fill: #e6e6e6"></path>
     </g>
@@ -53,8 +53,8 @@
       <circle cx="128.5" cy="38" r="9.5" style="fill: #f9d0a7"></circle>
     </g>
     <g>
-      <polygon points="72.99 74 77.5 84 82.5 84 88.5 74 72.99 74" style="fill: #006837"></polygon>
-      <path d="M77.5,84l-3,41,5.59,7.34a.53.53,0,0,0,.88,0L85.5,125l-3-41Z" style="fill: #009245"></path>
+      <polygon points="72.99 74 77.5 84 82.5 84 88.5 74 72.99 74" style="fill: #DAC000"></polygon>
+      <path d="M77.5,84l-3,41,5.59,7.34a.53.53,0,0,0,.88,0L85.5,125l-3-41Z" style="fill: #DAA520"></path>
       <path d="M72.5,74l4.42,8.07a.8.8,0,0,1-1.17.91l-15.7-9Z" style="fill: #e6e6e6"></path>
       <path d="M83.07,82,88,74h9.5l-14,8.42A.32.32,0,0,1,83.07,82Z" style="fill: #e6e6e6"></path>
     </g>
@@ -88,8 +88,8 @@
       <circle cx="134.96" cy="69" r="9.5" style="fill: #f9d0a7"></circle>
     </g>
     <g>
-      <polygon points="67.6 69.55 68.1 80.51 63.64 82.77 53.77 76.56 67.6 69.55" style="fill: #006837"></polygon>
-      <path d="M68.1,80.51l21.22,35.21-1.67,9.08a.53.53,0,0,1-.76.43l-7.38-4.53L63.64,82.77Z" style="fill: #009245"></path>
+      <polygon points="67.6 69.55 68.1 80.51 63.64 82.77 53.77 76.56 67.6 69.55" style="fill: #DAC000"></polygon>
+      <path d="M68.1,80.51l21.22,35.21-1.67,9.08a.53.53,0,0,1-.76.43l-7.38-4.53L63.64,82.77Z" style="fill: #DAA520"></path>
       <path d="M68,69.33l-.3,9.19a.8.8,0,0,0,1.46.29L79.14,63.7Z" style="fill: #e6e6e6"></path>
       <path d="M62.22,81.23l-8-4.89-10.75.16L62,81.82A.32.32,0,0,0,62.22,81.23Z" style="fill: #e6e6e6"></path>
     </g>
@@ -123,8 +123,8 @@
       <circle cx="26.5" cy="69" r="9.5" style="fill: #f9d0a7"></circle>
     </g>
     <g>
-      <polygon points="93.86 69.55 93.36 80.51 97.82 82.77 107.7 76.56 93.86 69.55" style="fill: #006837"></polygon>
-      <path d="M93.36,80.51,72.15,115.72l1.66,9.08a.54.54,0,0,0,.77.43L82,120.7,97.82,82.77Z" style="fill: #009245"></path>
+      <polygon points="93.86 69.55 93.36 80.51 97.82 82.77 107.7 76.56 93.86 69.55" style="fill: #DAC000"></polygon>
+      <path d="M93.36,80.51,72.15,115.72l1.66,9.08a.54.54,0,0,0,.77.43L82,120.7,97.82,82.77Z" style="fill: #DAA520"></path>
       <path d="M93.43,69.33l.29,9.19a.79.79,0,0,1-1.45.29l-10-15.11Z" style="fill: #e6e6e6"></path>
       <path d="M99.25,81.23l8-4.89L118,76.5,99.44,81.82A.32.32,0,0,1,99.25,81.23Z" style="fill: #e6e6e6"></path>
     </g>
@@ -159,8 +159,8 @@
       <circle cx="9.5" cy="73" r="9.5" style="fill: #f9d0a7"></circle>
     </g>
     <g>
-      <polygon points="83.01 74 78.5 84 73.5 84 67.5 74 83.01 74" style="fill: #006837"></polygon>
-      <path d="M78.5,84l3,41-5.59,7.34a.53.53,0,0,1-.88,0L70.5,125l3-41Z" style="fill: #009245"></path>
+      <polygon points="83.01 74 78.5 84 73.5 84 67.5 74 83.01 74" style="fill: #DAC000"></polygon>
+      <path d="M78.5,84l3,41-5.59,7.34a.53.53,0,0,1-.88,0L70.5,125l3-41Z" style="fill: #DAA520"></path>
       <path d="M83.5,74l-4.42,8.07a.8.8,0,0,0,1.17.91L96,74Z" style="fill: #e6e6e6"></path>
       <path d="M72.93,82,68,74H58.5l14,8.42A.32.32,0,0,0,72.93,82Z" style="fill: #e6e6e6"></path>
     </g>
@@ -195,8 +195,8 @@
       <circle cx="147.5" cy="72" r="9.5" style="fill: #f9d0a7"></circle>
     </g>
     <g>
-      <polygon points="73.99 73 78.5 83 83.5 83 89.5 73 73.99 73" style="fill: #006837"></polygon>
-      <path d="M78.5,83l-3,41,5.59,7.34a.53.53,0,0,0,.88,0L86.5,124l-3-41Z" style="fill: #009245"></path>
+      <polygon points="73.99 73 78.5 83 83.5 83 89.5 73 73.99 73" style="fill: #DAC000"></polygon>
+      <path d="M78.5,83l-3,41,5.59,7.34a.53.53,0,0,0,.88,0L86.5,124l-3-41Z" style="fill: #DAA520"></path>
       <path d="M73.5,73l4.42,8.07a.8.8,0,0,1-1.17.91l-15.7-9Z" style="fill: #e6e6e6"></path>
       <path d="M84.07,81,89,73h9.5l-14,8.42A.32.32,0,0,1,84.07,81Z" style="fill: #e6e6e6"></path>
     </g>
@@ -249,10 +249,10 @@
       <circle cx="53.5" cy="43" r="1.5"></circle>
     </g>
     <g>
-      <polygon points="83.01 74.5 78.5 84.5 73.5 84.5 67.5 74.5 83.01 74.5" style="fill: #006837"></polygon>
+      <polygon points="83.01 74.5 78.5 84.5 73.5 84.5 67.5 74.5 83.01 74.5" style="fill: #DAC000"></polygon>
       <path d="M83.5,74.5l-4.42,8.07a.8.8,0,0,0,1.17.91L98,73.5Z" style="fill: #e6e6e6"></path>
       <path d="M72.93,82.48,68,74.5H58.5l14,8.42A.32.32,0,0,0,72.93,82.48Z" style="fill: #e6e6e6"></path>
-      <path d="M78.5,84.5,117,51l-.09-8.16c-.1.16-.74.15-.91.16-.46,0-.44.12-.86.34L108,47,73.5,84.5Z" style="fill: #009245"></path>
+      <path d="M78.5,84.5,117,51l-.09-8.16c-.1.16-.74.15-.91.16-.46,0-.44.12-.86.34L108,47,73.5,84.5Z" style="fill: #DAA520"></path>
     </g>
   </symbol> <symbol id="jumpingtie_right" viewBox="0 0 157 180">
     <g>
@@ -285,10 +285,10 @@
       <circle cx="103.5" cy="43" r="1.5"></circle>
     </g>
     <g>
-      <polygon points="73.49 74.5 78 84.5 83 84.5 89 74.5 73.49 74.5" style="fill: #006837"></polygon>
+      <polygon points="73.49 74.5 78 84.5 83 84.5 89 74.5 73.49 74.5" style="fill: #DAC000"></polygon>
       <path d="M73,74.5l4.42,8.07a.8.8,0,0,1-1.17.91l-15.7-9Z" style="fill: #e6e6e6"></path>
       <path d="M83.57,82.48l4.93-8H98L84,82.92A.32.32,0,0,1,83.57,82.48Z" style="fill: #e6e6e6"></path>
-      <path d="M78,84.5,39.5,51l.09-8.16c.1.16.74.15.91.16.46,0,.44.12.86.34L48.5,47,83,84.5Z" style="fill: #009245"></path>
+      <path d="M78,84.5,39.5,51l.09-8.16c.1.16.74.15.91.16.46,0,.44.12.86.34L48.5,47,83,84.5Z" style="fill: #DAA520"></path>
     </g>
   </symbol>undefined <symbol id="standing_left" viewBox="0 0 157 180">
     <g>
@@ -303,8 +303,8 @@
       <circle cx="23" cy="123.5" r="9.5" style="fill: #f9d0a7"></circle>
     </g>
     <g>
-      <polygon points="78.01 74 73.5 84 68.5 84 62.5 74 78.01 74" style="fill: #006837"></polygon>
-      <path d="M73.5,84l3,41-5.59,7.34a.53.53,0,0,1-.88,0L65.5,125l3-41Z" style="fill: #009245"></path>
+      <polygon points="78.01 74 73.5 84 68.5 84 62.5 74 78.01 74" style="fill: #DAC000"></polygon>
+      <path d="M73.5,84l3,41-5.59,7.34a.53.53,0,0,1-.88,0L65.5,125l3-41Z" style="fill: #DAA520"></path>
       <path d="M78.5,74l-4.42,8.07a.8.8,0,0,0,1.17.91L91,74Z" style="fill: #e6e6e6"></path>
       <path d="M67.93,82,63,74H53.5l14,8.42A.32.32,0,0,0,67.93,82Z" style="fill: #e6e6e6"></path>
     </g>
@@ -339,8 +339,8 @@
       <circle cx="128" cy="123.5" r="9.5" style="fill: #f9d0a7"></circle>
     </g>
     <g>
-      <polygon points="72.99 74 77.5 84 82.5 84 88.5 74 72.99 74" style="fill: #006837"></polygon>
-      <path d="M77.5,84l-3,41,5.59,7.34a.53.53,0,0,0,.88,0L85.5,125l-3-41Z" style="fill: #009245"></path>
+      <polygon points="72.99 74 77.5 84 82.5 84 88.5 74 72.99 74" style="fill: #DAC000"></polygon>
+      <path d="M77.5,84l-3,41,5.59,7.34a.53.53,0,0,0,.88,0L85.5,125l-3-41Z" style="fill: #DAA520"></path>
       <path d="M72.5,74l4.42,8.07a.8.8,0,0,1-1.17.91l-15.7-9Z" style="fill: #e6e6e6"></path>
       <path d="M83.07,82,88,74h9.5l-14,8.42A.32.32,0,0,1,83.07,82Z" style="fill: #e6e6e6"></path>
     </g>
@@ -375,8 +375,8 @@
       <circle cx="35.82" cy="127" r="9.5" style="fill: #f9d0a7"></circle>
     </g>
     <g>
-      <polygon points="85.33 74 80.81 84 75.81 84 69.81 74 85.33 74" style="fill: #006837"></polygon>
-      <path d="M80.82,84l3,41-5.59,7.34a.53.53,0,0,1-.88,0L72.82,125l3-41Z" style="fill: #009245"></path>
+      <polygon points="85.33 74 80.81 84 75.81 84 69.81 74 85.33 74" style="fill: #DAC000"></polygon>
+      <path d="M80.82,84l3,41-5.59,7.34a.53.53,0,0,1-.88,0L72.82,125l3-41Z" style="fill: #DAA520"></path>
       <path d="M85.82,74,81.4,82.07a.79.79,0,0,0,1.16.91l15.71-9Z" style="fill: #e6e6e6"></path>
       <path d="M75.24,82l-4.92-8h-9.5l14,8.42A.32.32,0,0,0,75.24,82Z" style="fill: #e6e6e6"></path>
     </g>
@@ -411,8 +411,8 @@
       <circle cx="122.5" cy="127" r="9.5" style="fill: #f9d0a7"></circle>
     </g>
     <g>
-      <polygon points="72.99 74 77.5 84 82.5 84 88.5 74 72.99 74" style="fill: #006837"></polygon>
-      <path d="M77.5,84l-3,41,5.59,7.34a.53.53,0,0,0,.88,0L85.5,125l-3-41Z" style="fill: #009245"></path>
+      <polygon points="72.99 74 77.5 84 82.5 84 88.5 74 72.99 74" style="fill: #DAC000"></polygon>
+      <path d="M77.5,84l-3,41,5.59,7.34a.53.53,0,0,0,.88,0L85.5,125l-3-41Z" style="fill: #DAA520"></path>
       <path d="M72.5,74l4.42,8.07a.8.8,0,0,1-1.17.91l-15.7-9Z" style="fill: #e6e6e6"></path>
       <path d="M83.07,82,88,74h9.5l-14,8.42A.32.32,0,0,1,83.07,82Z" style="fill: #e6e6e6"></path>
     </g>
@@ -446,8 +446,8 @@
       <circle cx="10.36" cy="83" r="9.5" style="fill: #f9d0a7"></circle>
     </g>
     <g>
-      <polygon points="78.86 73.13 78.72 84.1 74.14 86.1 62.86 76.5 78.86 73.13" style="fill: #006837"></polygon>
-      <path d="M78.72,84.1l19.15,36.38-2.19,9a.53.53,0,0,1-.79.39l-7.11-5L74.14,86.1Z" style="fill: #009245"></path>
+      <polygon points="78.86 73.13 78.72 84.1 74.14 86.1 62.86 76.5 78.86 73.13" style="fill: #DAC000"></polygon>
+      <path d="M78.72,84.1l19.15,36.38-2.19,9a.53.53,0,0,1-.79.39l-7.11-5L74.14,86.1Z" style="fill: #DAA520"></path>
       <path d="M79.31,72.94l-.83,9.16a.8.8,0,0,0,1.43.37L90.72,68Z" style="fill: #e6e6e6"></path>
       <path d="M72.81,84.48l-10-8h-9l18.72,8.56A.32.32,0,0,0,72.81,84.48Z" style="fill: #e6e6e6"></path>
     </g>
@@ -481,8 +481,8 @@
       <circle cx="146.5" cy="83" r="9.5" style="fill: #f9d0a7"></circle>
     </g>
     <g>
-      <polygon points="78 73.13 78.14 84.1 82.72 86.1 94 76.5 78 73.13" style="fill: #006837"></polygon>
-      <path d="M78.14,84.1,59,120.48l2.19,9a.53.53,0,0,0,.79.39l7.1-5L82.72,86.1Z" style="fill: #009245"></path>
+      <polygon points="78 73.13 78.14 84.1 82.72 86.1 94 76.5 78 73.13" style="fill: #DAC000"></polygon>
+      <path d="M78.14,84.1,59,120.48l2.19,9a.53.53,0,0,0,.79.39l7.1-5L82.72,86.1Z" style="fill: #DAA520"></path>
       <path d="M77.55,72.94l.83,9.16a.8.8,0,0,1-1.44.37L66.14,68Z" style="fill: #e6e6e6"></path>
       <path d="M84.05,84.48l10-8h9L84.28,85.06A.32.32,0,0,1,84.05,84.48Z" style="fill: #e6e6e6"></path>
     </g>
@@ -516,8 +516,8 @@
       <circle cx="135.96" cy="69" r="9.5" style="fill: #f9d0a7"></circle>
     </g>
     <g>
-      <polygon points="68.6 69.55 69.1 80.51 64.64 82.77 54.77 76.56 68.6 69.55" style="fill: #006837"></polygon>
-      <path d="M69.1,80.51l21.22,35.21-1.67,9.08a.53.53,0,0,1-.76.43l-7.38-4.53L64.64,82.77Z" style="fill: #009245"></path>
+      <polygon points="68.6 69.55 69.1 80.51 64.64 82.77 54.77 76.56 68.6 69.55" style="fill: #DAC000"></polygon>
+      <path d="M69.1,80.51l21.22,35.21-1.67,9.08a.53.53,0,0,1-.76.43l-7.38-4.53L64.64,82.77Z" style="fill: #DAA520"></path>
       <path d="M69,69.33l-.3,9.19a.8.8,0,0,0,1.46.29L80.14,63.7Z" style="fill: #e6e6e6"></path>
       <path d="M63.22,81.23l-8-4.89-10.75.16L63,81.82A.32.32,0,0,0,63.22,81.23Z" style="fill: #e6e6e6"></path>
     </g>
@@ -551,8 +551,8 @@
       <circle cx="22.5" cy="69" r="9.5" style="fill: #f9d0a7"></circle>
     </g>
     <g>
-      <polygon points="89.86 69.55 89.36 80.51 93.82 82.77 103.7 76.56 89.86 69.55" style="fill: #006837"></polygon>
-      <path d="M89.36,80.51,68.15,115.72l1.66,9.08a.54.54,0,0,0,.77.43L78,120.7,93.82,82.77Z" style="fill: #009245"></path>
+      <polygon points="89.86 69.55 89.36 80.51 93.82 82.77 103.7 76.56 89.86 69.55" style="fill: #DAC000"></polygon>
+      <path d="M89.36,80.51,68.15,115.72l1.66,9.08a.54.54,0,0,0,.77.43L78,120.7,93.82,82.77Z" style="fill: #DAA520"></path>
       <path d="M89.43,69.33l.29,9.19a.79.79,0,0,1-1.45.29l-10-15.11Z" style="fill: #e6e6e6"></path>
       <path d="M95.25,81.23l8-4.89L114,76.5,95.44,81.82A.32.32,0,0,1,95.25,81.23Z" style="fill: #e6e6e6"></path>
     </g>
@@ -592,8 +592,8 @@
       <circle cx="11.5" cy="71" r="9.5" style="fill: #f9d0a7"></circle>
     </g>
     <g>
-      <polygon points="84.01 73 79.5 83 74.5 83 68.5 73 84.01 73" style="fill: #006837"></polygon>
-      <path d="M79.5,83l3,41-5.59,7.34a.53.53,0,0,1-.88,0L71.5,124l3-41Z" style="fill: #009245"></path>
+      <polygon points="84.01 73 79.5 83 74.5 83 68.5 73 84.01 73" style="fill: #DAC000"></polygon>
+      <path d="M79.5,83l3,41-5.59,7.34a.53.53,0,0,1-.88,0L71.5,124l3-41Z" style="fill: #DAA520"></path>
       <path d="M84.5,73l-4.42,8.07a.8.8,0,0,0,1.17.91L95,72.5Z" style="fill: #e6e6e6"></path>
       <path d="M73.93,81,69,73l-8,.5,12.49,7.92A.32.32,0,0,0,73.93,81Z" style="fill: #e6e6e6"></path>
     </g>
@@ -628,8 +628,8 @@
       <circle cx="145.5" cy="72" r="9.5" style="fill: #f9d0a7"></circle>
     </g>
     <g>
-      <polygon points="72.99 74 77.5 84 82.5 84 88.5 74 72.99 74" style="fill: #006837"></polygon>
-      <path d="M77.5,84l-3,41,5.59,7.34a.53.53,0,0,0,.88,0L85.5,125l-3-41Z" style="fill: #009245"></path>
+      <polygon points="72.99 74 77.5 84 82.5 84 88.5 74 72.99 74" style="fill: #DAC000"></polygon>
+      <path d="M77.5,84l-3,41,5.59,7.34a.53.53,0,0,0,.88,0L85.5,125l-3-41Z" style="fill: #DAA520"></path>
       <path d="M72.5,74l4.42,8.07a.8.8,0,0,1-1.17.91L62,73.5Z" style="fill: #e6e6e6"></path>
       <path d="M83.07,82,88,74l8,.5L83.51,82.42A.32.32,0,0,1,83.07,82Z" style="fill: #e6e6e6"></path>
     </g>

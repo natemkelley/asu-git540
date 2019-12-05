@@ -8,6 +8,20 @@ module.exports = [
   },
   {
     name: "World_Grass_Cloud",
+    posX: 775,
+    posY: 902,
+    height: 123,
+    width: 182
+  },
+  {
+    name: "World_Grass_Cloud",
+    posX: 1775,
+    posY: 932,
+    height: 123,
+    width: 182
+  },
+  {
+    name: "World_Grass_Cloud",
     posX: 995,
     posY: 482,
     height: 123,

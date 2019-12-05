@@ -1,27 +1,8 @@
 <template>
-  <div>
-    <div class="stay">
-      <svg-icon
-        class="tracks"
-        name="objects/World_Cave_Tracks"
-        height="120px"
-        width="2790px"
-      />
-      <svg-icon
-        class="tracks2"
-        name="objects/World_Cave_Tracks"
-        height="120px"
-        width="2790px"
-      />
-      <svg-icon
-        class="tracks3"
-        name="objects/World_Cave_Tracks"
-        height="120px"
-        width="2790px"
-      />
-    </div>
-    <div class="train">
-      <div class="smoke">
+    <div>
+
+    <div>
+              <div class="smoke">
         <span class="s0"></span>
         <span class="s1"></span>
         <span class="s2"></span>
@@ -43,86 +24,45 @@
         <span class="s18"></span>
         <span class="s19"></span>
       </div>
-      <svg-icon
-        class="trainitself"
-        name="final/X__Train"
-        height="320px"
-        width="1790px"
-      />
-    </div>
-  </div>
+</div>
+        <svg-icon 
+        class="plant"
+        name="objects/X__Powerplant"
+        />
+                <svg-icon 
+        class="lines"
+        name="objects/X__Powerlines"
+        />
+        </div>
 </template>
 
 <script>
-import anime from "animejs";
 export default {
-  name: "Train",
-  props: ["introTrain"],
-  methods: {
-    runTrain(timer) {
-        if(!timer){
-            timer = 400
-        }
-        var duration = 33000;
-      setTimeout(() => {
-        anime({
-          targets: ".train",
-          marginLeft: 7950,
-          duration: duration,
-          delay: 2500,
-          easing: "easeOutQuad"
-        });
-        this.runTrain(5000)
-      }, timer);
-    }
-  },
-  watch: {
-    introTrain(newVal) {
-      if (newVal) {
-        this.runTrain();
-      }
-    }
-  }
-};
+    name:"Powerplant"
+}
 </script>
 
 <style scoped>
-.tracks {
-  margin-bottom: 80px;
-  position: fixed;
-  bottom: 0;
-  left: 0;
+.plant{
+    transform: scale(5)
 }
-.tracks2 {
-  margin-bottom: 80px;
-  position: fixed;
-  bottom: 0;
-  margin-left: 2730px;
-}
-.tracks3 {
-  margin-bottom: 80px;
-  position: fixed;
-  bottom: 0;
-  margin-left: 5460px;
-}
-
-.train {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  margin-bottom: 86px;
-  margin-left: -2500px;
-  z-index: 100;
-  transform: scale(2.3);
+.lines{
+    position: absolute;
+    z-index: -1;
+    bottom: 0;
+    left:0;
+    transform: scale(14.5);
+    margin-left: 2519px;
+    margin-bottom: -160px;
 }
 
 .smoke {
-  position: absolute;
-  bottom: 229px;
-  margin-right: 75px;
-  right: 0;
-  transform: scale(1.07);
-  z-index: -1;
+    position: absolute;
+    bottom: 385px;
+    margin-right: 395px;
+    right: 0;
+    transform: scale(1.77);
+    z-index: -1;
 }
 
 /* smoke balls */
@@ -134,11 +74,11 @@ export default {
   margin-left: -20px;
   height: 0px;
   width: 0px;
-  border: 35px solid #ffffff;
+  border: 35px solid #474747;
   border-radius: 35px;
   left: -14px;
   opacity: 0;
-  transform: scale(0.2);
+  transform: scale(0.3);
 }
 
 /* Smoke animation */
